@@ -114,3 +114,18 @@ section.gallery {
     transform: translateY(100%);
   }
 }
+
+@media  (width < 80em) {
+  section.gallery header span {
+    font-size: .75rem;
+  }
+
+  section.gallery .content {
+    grid-template-areas: "A" "B" "C" "D";
+
+    & figure > img {
+      height: 16rem;
+    }
+  }
+  
+}

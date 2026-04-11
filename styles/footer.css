@@ -99,3 +99,22 @@ footer {
     }
   }
 }
+
+@media  (width < 80em) {
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: initial;
+
+    & .social-links a {
+      justify-content: space-between;
+      &::before {
+        left: -8px;
+      }
+    }
+
+    & nav {
+      flex-direction: column;
+    }
+  }
+}
